@@ -11,7 +11,7 @@ export default function App() {
         <Text style={[styles.defaultText, styles.selectedText]}>Shiv</Text>
         <Text style={[styles.defaultText, styles.selectedText]}>Raj</Text>
         <Text style={[styles.defaultText, styles.selectedText]}>Badu</Text>
-        <Text style={styles.defaultText}>Prz</Text>
+        <Text style={[styles.defaultText, styles.selectedText]}>Prz</Text>
     </View>
   );
 }
@@ -19,9 +19,10 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#DDD',
+    flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-around', // move content to center of screen, other options: flex-start, flex-end, space-between, space-around
   },
   defaultText: {
     fontSize: 22,
@@ -33,6 +34,7 @@ const styles = StyleSheet.create({
   selectedText: {
     backgroundColor: 'yellow',
     color: 'blue',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    alignSelf: 'flex-start'
   }
 });
