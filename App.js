@@ -6,6 +6,7 @@ export default function App() {
     <View style={styles.container}>
       <Text>Shiv</Text>
       <Text>Raj</Text>
+      <Text>Badu</Text>
       <Text>Prz</Text>
     </View>
   );
