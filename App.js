@@ -12,6 +12,7 @@ export default function App() {
         <Text style={[styles.defaultText, styles.selectedText]}>Raj</Text>
         <Text style={[styles.defaultText, styles.selectedText]}>Badu</Text>
         <Text style={[styles.defaultText, styles.selectedText]}>Prz</Text>
+        <Text style={[styles.defaultText, styles.nepaliText]}>शिव राज बडु</Text>
     </View>
   );
 }
@@ -34,6 +35,12 @@ const styles = StyleSheet.create({
   selectedText: {
     backgroundColor: 'yellow',
     color: 'blue',
+    fontWeight: 'bold',
+    alignSelf: 'flex-start'
+  },
+  nepaliText: {
+    backgroundColor: 'blue',
+    color: 'white',
     fontWeight: 'bold',
     alignSelf: 'flex-start'
   }
