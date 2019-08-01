@@ -4,15 +4,21 @@ import {
         Text,
         View
       } from 'react-native';
+import ProfileImage from './components/ProfileImage';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-        <Text style={[styles.defaultText, styles.selectedText, styles.fontBlue]}>Hello World</Text>
-        <Text style={[styles.defaultText, styles.selectedText, styles.fontBlue]}>Shiv</Text>
-        <Text style={[styles.defaultText, styles.selectedText, styles.fontBlue]}>Raj</Text>
-        <Text style={[styles.defaultText, styles.selectedText, styles.fontBlue]}>Badu</Text>
-        <Text style={[styles.defaultText, styles.nepaliText, styles.fontWhite]}>शिव राज बडु</Text>
+    <View>
+        <View style={styles.container}>
+          <Text style={[styles.defaultText, styles.selectedText, styles.fontBlue]}>Hello World</Text>
+          <Text style={[styles.defaultText, styles.selectedText, styles.fontBlue]}>Shiv</Text>
+          <Text style={[styles.defaultText, styles.selectedText, styles.fontBlue]}>Raj</Text>
+          <Text style={[styles.defaultText, styles.selectedText, styles.fontBlue]}>Badu</Text>
+          <Text style={[styles.defaultText, styles.nepaliText, styles.fontWhite]}>शिव राज बडु</Text>
+        </View>
+        <View style={styles.profileImage}>
+          <ProfileImage />
+        </View>
     </View>
   );
 }
@@ -47,5 +53,8 @@ const styles = StyleSheet.create({
   },
   fontWhite: {
     color: 'white'
+  },
+  profileImage: {
+    top: 70
   }
 });
