@@ -6,14 +6,15 @@ class LoginScreen extends React.Component {
     title: 'Login',
   };
   render() {
+    const {navigate} = this.props.navigation;
     return (
       <View style={styles.container}>
         <View style={styles.menus}>
-          <Button color="orange" title="Home" onPress={() => navigate('Login', {name: 'Sraj'})}
+          <Button color="orange" title="Home" onPress={() => this.props.navigation.navigate('Home')}
           />
-          <Button title="Profile Image" onPress={() => navigate('Login', {name: 'Sraj'})}
+          <Button title="Profile Image" onPress={() => this.props.navigation.navigate('ProfileImage')}
           />
-          <Button color="green" title="AlignTextPage" onPress={() => navigate('Login', {name: 'Sraj'})}
+          <Button color="green" title="AlignTextPage" onPress={() => this.props.navigation.navigate('AlignTextCenterScreen')}
           />
         </View>
         <View>

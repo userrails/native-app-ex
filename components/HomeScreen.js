@@ -12,9 +12,9 @@ class HomeScreen extends React.Component {
         <View style={styles.menus}>
           <Button color="orange" title="Login Page" onPress={() => navigate('Login', {name: 'Sraj'})}
           />
-          <Button title="Profile Image" onPress={() => navigate('Login', {name: 'Sraj'})}
+          <Button title="Profile Image" onPress={() => this.props.navigation.navigate('ProfileImage')}
           />
-          <Button color="green" title="AlignTextPage" onPress={() => navigate('Login', {name: 'Sraj'})}
+          <Button color="green" title="AlignTextPage" onPress={() => this.props.navigation.navigate('AlignTextCenterScreen')}
           />
         </View>
         <View>
