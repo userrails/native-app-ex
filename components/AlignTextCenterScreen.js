@@ -15,14 +15,14 @@ class AlignTextCenterScreen extends Component {
           <Button color="green" title="Notes" onPress={() => this.props.navigation.navigate('AlignTextCenterScreen')}
           />
         </View>
+        <View>
+          <Text style={styles.navigationText}>My favourite pet animal</Text>
 
-        <View style={styles.position}>
-          <Text>My favourite pet animal</Text>
-        </View>
-        <View style={styles.pets_position}>
+          <View style={styles.pets_position}>
             <Text style={styles.defaultText}>Cow</Text>
             <Text style={styles.defaultText}>Dog</Text>
             <Text style={styles.defaultText}>Cat</Text>
+          </View>
         </View>
       </View>
     );
@@ -32,13 +32,9 @@ class AlignTextCenterScreen extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'row'
-  },
-  position: {
-    top: 180
   },
   pets_position: {
-    top: 220,
+    top: 10,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center'
