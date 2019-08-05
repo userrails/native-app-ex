@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { View, Image, StyleSheet } from 'react-native';
+import { View, Image, StyleSheet, Button, Text } from 'react-native';
 
 class ProfileImage extends Component {
   render() {
+    const {navigate} = this.props.navigation;
+    
     let pic1 = {
       uri: 'https://www.static-contents.youth4work.com/y4w/Images/UserThumbImage/160_160/23720.png?v=20161110184144'
     }
@@ -13,11 +15,26 @@ class ProfileImage extends Component {
 
     return (
       <View style={styles.container}>
-        <View>
-          <Image style={styles.image} source={pic1}/>
+        <View style={styles.menus}>
+          <Button color="orange" title="Home" onPress={() => this.props.navigation.navigate('Home')} />
+          <Button color="orange" title="Login" onPress={() => navigate('Login', {name: 'Sraj'})}
+          />
+          <Button title="Profile" onPress={() => this.props.navigation.navigate('ProfileImage')}
+          />
+          <Button color="green" title="Notes" onPress={() => this.props.navigation.navigate('AlignTextCenterScreen')}
+          />
         </View>
         <View>
-          <Image style={styles.image} source={pic2}/>
+          <Text style={styles.navigationText}>Profile Image</Text>
+
+          <View style={{flexDirection: 'row'}}>
+            <View>
+              <Image style={styles.image} source={pic1}/>
+            </View>
+            <View>
+              <Image style={styles.image} source={pic2}/>
+            </View>
+          </View>
         </View>
       </View>
     );
@@ -27,12 +44,21 @@ class ProfileImage extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'row'
   },
   image: {
     width: 100,
     height: 100,
-  }
+  },
+  menus: {
+    flexDirection: 'row',
+    alignItems: "center",
+    justifyContent: 'center'
+  },
+  navigationText: {
+    fontSize: 20,
+    color: 'red',
+    marginLeft: 40
+  },
 })
 
 export default ProfileImage;

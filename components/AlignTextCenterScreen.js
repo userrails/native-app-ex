@@ -1,10 +1,21 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Button } from 'react-native';
 
 class AlignTextCenterScreen extends Component {
   render() {
+    const {navigate} = this.props.navigation;
     return (
       <View style={styles.container}>
+        <View style={styles.menus}>
+          <Button color="orange" title="Home" onPress={() => this.props.navigation.navigate('Home')} />
+          <Button color="orange" title="Login" onPress={() => navigate('Login', {name: 'Sraj'})}
+          />
+          <Button title="Profile" onPress={() => this.props.navigation.navigate('ProfileImage')}
+          />
+          <Button color="green" title="Notes" onPress={() => this.props.navigation.navigate('AlignTextCenterScreen')}
+          />
+        </View>
+
         <View style={styles.position}>
           <Text>My favourite pet animal</Text>
         </View>
@@ -38,7 +49,17 @@ const styles = StyleSheet.create({
     padding: 10,
     color: 'grey',
     borderWidth: 1
-  }
+  },
+  menus: {
+    flexDirection: 'row',
+    alignItems: "center",
+    justifyContent: 'center'
+  },
+  navigationText: {
+    fontSize: 20,
+    color: 'red',
+    marginLeft: 40
+  },
 })
 
 export default AlignTextCenterScreen;
