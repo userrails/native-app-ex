@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Button } from "react-native";
+import { View, Text, Button, StyleSheet } from "react-native";
 
 class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -8,16 +8,37 @@ class HomeScreen extends React.Component {
   render() {
     const {navigate} = this.props.navigation;
     return (
-      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-        <Text>Welcome to Home Screen.</Text>
-        <Button title="Go to Login Page" onPress={() => navigate('Login', {name: 'Sraj'})}
-        />
-        <Button title="Go to Profile Image" onPress={() => navigate('Login', {name: 'Sraj'})}
-        />
-        <Button title="Go to AlignTextPage" onPress={() => navigate('Login', {name: 'Sraj'})}
-        />
+      <View style={styles.container}>
+        <View style={styles.menus}>
+          <Button color="orange" title="Login Page" onPress={() => navigate('Login', {name: 'Sraj'})}
+          />
+          <Button title="Profile Image" onPress={() => navigate('Login', {name: 'Sraj'})}
+          />
+          <Button color="green" title="AlignTextPage" onPress={() => navigate('Login', {name: 'Sraj'})}
+          />
+        </View>
+        <View>
+          <Text style={styles.navigationText}>Welcome to Home Screen.</Text>  
+        </View>
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
+  menus: {
+    flexDirection: 'row',
+    alignItems: "center",
+    justifyContent: 'center'
+  },
+  navigationText: {
+    fontSize: 20,
+    color: 'red',
+    marginLeft: 40
+  },
+})
+
 export default HomeScreen;
