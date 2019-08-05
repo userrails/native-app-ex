@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Button } from "react-native";
+import { View, Text, Button, StyleSheet } from "react-native";
 
 class LoginScreen extends React.Component {
   static navigationOptions = {
@@ -7,17 +7,38 @@ class LoginScreen extends React.Component {
   };
   render() {
     return (
-      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-        <Text>Login Screen</Text>
-        <Text>Name: {this.props.navigation.state.params.name}</Text>
-        <Button title="Go to Home" onPress={() => this.props.navigation.navigate('Home')}
-        />
-        <Button title="Go to Profile Image" onPress={() => this.props.navigation.navigate('ProfileImage')}
-        />
-        <Button title="Go to AlignTextPage" onPress={() => this.props.navigation.navigate('AlignTextCenterScreen')}
-        />
+      <View style={styles.container}>
+        <View style={styles.menus}>
+          <Button color="orange" title="Home" onPress={() => navigate('Login', {name: 'Sraj'})}
+          />
+          <Button title="Profile Image" onPress={() => navigate('Login', {name: 'Sraj'})}
+          />
+          <Button color="green" title="AlignTextPage" onPress={() => navigate('Login', {name: 'Sraj'})}
+          />
+        </View>
+        <View>
+          <Text style={styles.navigationText}>Login Screen</Text>
+          <Text style={styles.navigationText}>Name: {this.props.navigation.state.params.name}</Text>
+        </View>
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
+  menus: {
+    flexDirection: 'row',
+    alignItems: "center",
+    justifyContent: 'center'
+  },
+  navigationText: {
+    fontSize: 20,
+    color: 'red',
+    marginLeft: 40
+  },
+})
+
 export default LoginScreen;
