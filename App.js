@@ -14,14 +14,15 @@ import LoginScreen from './components/LoginScreen'
 import ProfileImage from './components/ProfileImage';
 import AlignTextCenterScreen from './components/AlignTextCenterScreen';
 import ColorList from './components/ColorList';
-
+import TouchHighlight from './components/TouchHighlight';
 
 const MainNavigator = createStackNavigator({
   Home: { screen: HomeScreen },
   Login: { screen: LoginScreen },
   ProfileImage: { screen: ProfileImage },
   AlignTextCenterScreen: { screen: AlignTextCenterScreen },
-  ColorList: { screen: ColorList }
+  ColorList: { screen: ColorList },
+  TouchHighlight: { screen: TouchHighlight }
 });
 
 const App = createAppContainer(MainNavigator);

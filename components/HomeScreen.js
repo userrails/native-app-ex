@@ -19,6 +19,8 @@ class HomeScreen extends React.Component {
           />
           <Button color="yellow" title="Color List" onPress={() => this.props.navigation.navigate('ColorList')}
           />
+          <Button color="purple" title="Touchable" onPress={() => this.props.navigation.navigate('TouchHighlight')}
+          />
         </View>
         <View>
           <Text style={styles.navigationText}>Welcome to Home Screen.</Text>  
