@@ -26,14 +26,14 @@ class TouchHighlight extends Component {
                 <ColorButton backgroundColor="red" onSelect={this.changeColor} />
                 <ColorButton backgroundColor="blue" onSelect={this.changeColor} />
                 <ColorButton backgroundColor="green" onSelect={this.changeColor} />
-                <ColorButton backgroundColor="salman" onSelect={this.changeColor} />
-                <ColorButton backgroundColor="#00FF" onSelect={this.changeColor} />
+                <ColorButton backgroundColor="salmon" onSelect={this.changeColor} />
+                <ColorButton backgroundColor="#00FFFF" onSelect={this.changeColor} />
                 <ColorButton backgroundColor="rgb(255,0,255)" onSelect={this.changeColor} />
                 <ColorButton backgroundColor="red" onSelect={this.changeColor} />
                 <ColorButton backgroundColor="blue" onSelect={this.changeColor} />
                 <ColorButton backgroundColor="green" onSelect={this.changeColor} />
-                <ColorButton backgroundColor="salman" onSelect={this.changeColor} />
-                <ColorButton backgroundColor="#00FF" onSelect={this.changeColor} />
+                <ColorButton backgroundColor="salmon" onSelect={this.changeColor} />
+                <ColorButton backgroundColor="#00FFFF" onSelect={this.changeColor} />
                 <ColorButton backgroundColor="rgb(255,0,255)" onSelect={this.changeColor} />
             </ScrollView>
         )
@@ -45,7 +45,6 @@ const styles = StyleSheet.create({
         flex: 1,
         paddingTop: 20
     },
-   
 });
 
 export default TouchHighlight;
