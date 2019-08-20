@@ -26,13 +26,11 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     button: {
-        fontSize: 20,
         margin: 10,
         padding: 10,
         borderWidth: 2,
         borderRadius: 10,
-        alignSelf: 'stretch',
-        textAlign: 'center'
+        alignSelf: 'stretch'
     },
     sample: {
         height: 20,
