@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import {
-    AppRegistry,
     StyleSheet,
-    Text,
-    View,
-    TouchableHighlight,
+    ScrollView,
 } from 'react-native'
+import ColorButton from './ColorButton'
 
 class TouchHighlight extends Component {
     constructor() {
@@ -24,17 +22,14 @@ class TouchHighlight extends Component {
         const { backgroundColor } = this.state
         
         return (
-            <View style={[styles.container, { backgroundColor }]}>
-                <TouchableHighlight style={styles.button}
-                onPress={() => this.changeColor('yellow')}
-                underlayColor="orange">
-                    <View style={styles.row}>
-                        <View style={[styles.sample, { backgroundColor: 'yellow' }]}>
-                            <Text style={styles.text}>Yellow</Text>
-                        </View>
-                    </View>
-                </TouchableHighlight>
-            </View>
+            <ScrollView style={[styles.container, { backgroundColor }]}>
+                <ColorButton backgroundColor="red" onSelect={this.changeColor} />
+                <ColorButton backgroundColor="blue" onSelect={this.changeColor} />
+                <ColorButton backgroundColor="green" onSelect={this.changeColor} />
+                <ColorButton backgroundColor="salman" onSelect={this.changeColor} />
+                <ColorButton backgroundColor="#00FF" onSelect={this.changeColor} />
+                <ColorButton backgroundColor="rgb(255,0,255)" onSelect={this.changeColor} />
+            </ScrollView>
         )
     }
 }
@@ -42,34 +37,9 @@ class TouchHighlight extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#F5FCFF'
+        paddingTop: 20
     },
-    row: {
-        flexDirection: 'row',
-        alignItems: 'center'
-    },
-    button: {
-        fontSize: 30,
-        margin: 10,
-        padding: 10,
-        borderWidth: 2,
-        borderRadius: 10,
-        alignSelf: 'stretch',
-        textAlign: 'center'
-    },
-    sample: {
-        height: 20,
-        width: 20,
-        borderRadius: 10,
-        margin: 5,
-        backgroundColor: 'white'
-    },
-    text: {
-        fontSize: 20,
-        margin: 5
-    }
+   
 });
 
 export default TouchHighlight;

@@ -15,6 +15,8 @@ class HomeScreen extends React.Component {
           />
           <Button title="Profile" onPress={() => this.props.navigation.navigate('ProfileImage')}
           />
+        </View>
+        <View style={styles.menus}>
           <Button color="green" title="Notes" onPress={() => this.props.navigation.navigate('AlignTextCenterScreen')}
           />
           <Button color="yellow" title="Color List" onPress={() => this.props.navigation.navigate('ColorList')}
