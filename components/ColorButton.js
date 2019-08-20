@@ -12,7 +12,9 @@ const colorButton = ({backgroundColor, onSelect=f=>f}) => (
         underlayColor="orange">
             <View style={styles.row}>
                 <View style={[styles.sample, {backgroundColor}]}>
-                    <Text style={styles.text}>{backgroundColor}</Text>
+                </View>
+                <View>
+                  <Text style={styles.text}>{backgroundColor}</Text>
                 </View>
             </View>
         </TouchableHighlight>
