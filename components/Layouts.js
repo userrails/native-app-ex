@@ -10,6 +10,11 @@ class Layouts extends Component {
                     <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
                     <Text style={[styles.colorGreen, styles.button]}>Green</Text>
                 </View>
+                <View style={styles.flex_dir_row_reverse}>
+                    <Text style={[styles.colorRed, styles.button]}>Red</Text>
+                    <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
+                    <Text style={[styles.colorGreen, styles.button]}>Green</Text>
+                </View>
             </View>
         );
     }
@@ -32,6 +37,9 @@ const styles = StyleSheet.create({
     },
     flex_dir_row: {
         flexDirection: 'row'
+    },
+    flex_dir_row_reverse: {
+        flexDirection: 'row-reverse'
     }
 })
 
