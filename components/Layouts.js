@@ -61,6 +61,7 @@ class Layouts extends Component {
                     <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
                     <Text style={[styles.colorGreen, styles.button]}>Green</Text>
                 </View>
+                <Text style={styles.noteText}>Note: Justify content properties with flexDirection: column doesnot work with scroll view in normal case as we did for row wise and it can be implemented on the top level view</Text>
             </ScrollView>
         );
     }
@@ -121,6 +122,11 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         flexDirection: 'row'
     },
+    noteText: {
+        textAlign: 'center',
+        fontSize: 18,
+        color: 'orange'
+    }
 })
 
 export default Layouts;
