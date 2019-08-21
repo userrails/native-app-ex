@@ -15,6 +15,7 @@ import ProfileImage from './components/ProfileImage';
 import AlignTextCenterScreen from './components/AlignTextCenterScreen';
 import ColorList from './components/ColorList';
 import TouchHighlight from './components/TouchHighlight';
+import Layouts from './components/Layouts';
 
 const MainNavigator = createStackNavigator({
   Home: { screen: HomeScreen },
@@ -22,7 +23,8 @@ const MainNavigator = createStackNavigator({
   ProfileImage: { screen: ProfileImage },
   AlignTextCenterScreen: { screen: AlignTextCenterScreen },
   ColorList: { screen: ColorList },
-  TouchHighlight: { screen: TouchHighlight }
+  TouchHighlight: { screen: TouchHighlight },
+  Layouts: { screen: Layouts }
 });
 
 const App = createAppContainer(MainNavigator);

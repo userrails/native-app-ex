@@ -10,19 +10,15 @@ class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <View style={styles.menus}>
-          <Button color="orange" title="Home" onPress={() => this.props.navigation.navigate('Home')} />
-          <Button color="orange" title="Login" onPress={() => navigate('Login', {name: 'Sraj'})}
-          />
-          <Button title="Profile" onPress={() => this.props.navigation.navigate('ProfileImage')}
-          />
+          <Button color="red" title="Home" onPress={() => this.props.navigation.navigate('Home')} />
+          <Button color="orange" title="Login" onPress={() => navigate('Login', {name: 'Sraj'})}/>
+          <Button title="Profile" onPress={() => this.props.navigation.navigate('ProfileImage')}/>
         </View>
         <View style={styles.menus}>
-          <Button color="green" title="Notes" onPress={() => this.props.navigation.navigate('AlignTextCenterScreen')}
-          />
-          <Button color="yellow" title="Color List" onPress={() => this.props.navigation.navigate('ColorList')}
-          />
-          <Button color="purple" title="Touchable" onPress={() => this.props.navigation.navigate('TouchHighlight')}
-          />
+          <Button color="green" title="Notes" onPress={() => this.props.navigation.navigate('AlignTextCenterScreen')}/>
+          <Button color="yellow" title="Color List" onPress={() => this.props.navigation.navigate('ColorList')}/>
+          <Button color="purple" title="Touchable" onPress={() => this.props.navigation.navigate('TouchHighlight')}/>
+          <Button color="blue" title="Layouts" onPress={() => this.props.navigation.navigate('Layouts')}/>
         </View>
         <View>
           <Text style={styles.navigationText}>Welcome to Home Screen.</Text>  
