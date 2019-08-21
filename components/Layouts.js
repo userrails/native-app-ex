@@ -26,11 +26,9 @@ const styles = StyleSheet.create({
         backgroundColor: 'green'
     },
     button: {
-        margin: 10,
         padding: 10,
         borderWidth: 2,
-        borderRadius: 10,
-        alignSelf: 'stretch'
+        borderRadius: 10
     }
 })
 
