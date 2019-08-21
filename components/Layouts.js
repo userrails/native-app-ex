@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import { View, StyleSheet, Button, Text } from 'react-native';
+import { View, StyleSheet, Button, Text, ScrollView } from 'react-native';
 
 class Layouts extends Component {
     render () {
         return (
-            <View>
+            <ScrollView>
                 <Text style={styles.textHeader}>A. Flex Direction</Text>
                 <Text>A1. Flex Direction Row</Text>
                 <View style={styles.flex_dir_row}>
@@ -30,7 +30,14 @@ class Layouts extends Component {
                     <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
                     <Text style={[styles.colorGreen, styles.button]}>Green</Text>
                 </View>
-            </View>
+                <Text style={styles.textHeader}>B. Justify Content</Text>
+                <Text>B1. Justify Content Center</Text>
+                <View style={styles.justify_content_center}>
+                    <Text style={[styles.colorRed, styles.button]}>Red</Text>
+                    <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
+                    <Text style={[styles.colorGreen, styles.button]}>Green</Text>
+                </View>
+            </ScrollView>
         );
     }
 }
@@ -48,7 +55,9 @@ const styles = StyleSheet.create({
     button: {
         padding: 10,
         borderWidth: 2,
-        borderRadius: 10
+        borderRadius: 10,
+        width: 65,
+        height: 50
     },
     flex_dir_row: {
         flexDirection: 'row'
@@ -67,6 +76,10 @@ const styles = StyleSheet.create({
         color: 'blue',
         textAlign: 'center',
         fontSize: 18
+    },
+    justify_content_center: {
+        justifyContent: 'center',
+        flexDirection: 'row'
     }
 })
 
