@@ -5,21 +5,26 @@ class Layouts extends Component {
     render () {
         return (
             <View>
+                <Text style={styles.textHeader}>A. Flex Direction</Text>
+                <Text>A1. Flex Direction Row</Text>
                 <View style={styles.flex_dir_row}>
                     <Text style={[styles.colorRed, styles.button]}>Red</Text>
                     <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
                     <Text style={[styles.colorGreen, styles.button]}>Green</Text>
                 </View>
+                <Text>A2. Flex Direction Row Reverse</Text>
                 <View style={styles.flex_dir_row_reverse}>
                     <Text style={[styles.colorRed, styles.button]}>Red</Text>
                     <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
                     <Text style={[styles.colorGreen, styles.button]}>Green</Text>
                 </View>
+                <Text>A3. Flex Direction Column</Text>
                 <View style={styles.flex_dir_column}>
                     <Text style={[styles.colorRed, styles.button]}>Red</Text>
                     <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
                     <Text style={[styles.colorGreen, styles.button]}>Green</Text>
                 </View>
+                <Text>A4. Flex Direction Column Reverse</Text>
                 <View style={styles.flex_dir_column_reverse}>
                     <Text style={[styles.colorRed, styles.button]}>Red</Text>
                     <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
@@ -56,6 +61,12 @@ const styles = StyleSheet.create({
     },
     flex_dir_column_reverse: {
         flexDirection: 'column-reverse'
+    },
+    textHeader: {
+        fontWeight: 'bold',
+        color: 'blue',
+        textAlign: 'center',
+        fontSize: 18
     }
 })
 
