@@ -62,6 +62,31 @@ class Layouts extends Component {
                     <Text style={[styles.colorGreen, styles.button]}>Green</Text>
                 </View>
                 <Text style={styles.noteText}>Note: Justify content properties with flexDirection: column doesnot work with scroll view in normal case as we did for row wise and it can be implemented on the top level view</Text>
+                <Text style={styles.textHeader}>C. Align Items</Text>
+                <Text>C1. Align  Items flex end</Text>
+                <View style={styles.align_items_flex_end}>
+                    <Text style={[styles.colorRed, styles.button]}>Red</Text>
+                    <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
+                    <Text style={[styles.colorGreen, styles.button]}>Green</Text>
+                </View>
+                <Text>C2. Align  Items flex center</Text>
+                <View style={styles.align_items_center}>
+                    <Text style={[styles.colorRed, styles.button]}>Red</Text>
+                    <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
+                    <Text style={[styles.colorGreen, styles.button]}>Green</Text>
+                </View>
+                <Text>C3. Align  Items flex start</Text>
+                <View style={styles.align_items_flex_start}>
+                    <Text style={[styles.colorRed, styles.button]}>Red</Text>
+                    <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
+                    <Text style={[styles.colorGreen, styles.button]}>Green</Text>
+                </View>
+                <Text>C3. Align  Items stretch</Text>
+                <View style={styles.align_items_stretch}>
+                    <Text style={[styles.colorRed, styles.button]}>Red</Text>
+                    <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
+                    <Text style={[styles.colorGreen, styles.button]}>Green</Text>
+                </View>
             </ScrollView>
         );
     }
@@ -126,7 +151,20 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 18,
         color: 'orange'
-    }
+    },
+    align_items_flex_end: {
+        alignItems: 'flex-end'
+    },
+    align_items_center: {
+        alignItems: 'center'
+    },
+    align_items_flex_start: {
+        alignItems: 'flex-start'
+    },
+    align_items_stretch: {
+        alignItems: 'stretch'
+    },
+    
 })
 
 export default Layouts;
