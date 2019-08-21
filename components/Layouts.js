@@ -31,8 +31,32 @@ class Layouts extends Component {
                     <Text style={[styles.colorGreen, styles.button]}>Green</Text>
                 </View>
                 <Text style={styles.textHeader}>B. Justify Content</Text>
-                <Text>B1. Justify Content Center</Text>
+                <Text>B1. Justify Content Center for flex direction row</Text>
                 <View style={styles.justify_content_center}>
+                    <Text style={[styles.colorRed, styles.button]}>Red</Text>
+                    <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
+                    <Text style={[styles.colorGreen, styles.button]}>Green</Text>
+                </View>
+                <Text>B2. Justify Content flex end for flex direction row</Text>
+                <View style={styles.justify_content_flex_end}>
+                    <Text style={[styles.colorRed, styles.button]}>Red</Text>
+                    <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
+                    <Text style={[styles.colorGreen, styles.button]}>Green</Text>
+                </View>
+                <Text>B3. Justify Content flex start for flex direction row</Text>
+                <View style={styles.justify_content_flex_start}>
+                    <Text style={[styles.colorRed, styles.button]}>Red</Text>
+                    <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
+                    <Text style={[styles.colorGreen, styles.button]}>Green</Text>
+                </View>
+                <Text>B4. Justify Content space around for flex direction row</Text>
+                <View style={styles.justify_content_space_around}>
+                    <Text style={[styles.colorRed, styles.button]}>Red</Text>
+                    <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
+                    <Text style={[styles.colorGreen, styles.button]}>Green</Text>
+                </View>
+                <Text>B5. Justify Content space between for flex direction row</Text>
+                <View style={styles.justify_content_space_between}>
                     <Text style={[styles.colorRed, styles.button]}>Red</Text>
                     <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
                     <Text style={[styles.colorGreen, styles.button]}>Green</Text>
@@ -80,7 +104,23 @@ const styles = StyleSheet.create({
     justify_content_center: {
         justifyContent: 'center',
         flexDirection: 'row'
-    }
+    },
+    justify_content_flex_end: {
+        justifyContent: 'flex-end',
+        flexDirection: 'row'
+    },
+    justify_content_flex_start: {
+        justifyContent: 'flex-start',
+        flexDirection: 'row'
+    },
+    justify_content_space_around: {
+        justifyContent: 'space-around',
+        flexDirection: 'row'
+    },
+    justify_content_space_between: {
+        justifyContent: 'space-between',
+        flexDirection: 'row'
+    },
 })
 
 export default Layouts;
