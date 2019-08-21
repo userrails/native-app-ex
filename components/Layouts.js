@@ -5,7 +5,7 @@ class Layouts extends Component {
     render () {
         return (
             <View>
-                <View>
+                <View style={styles.flex_dir_row}>
                     <Text style={[styles.colorRed, styles.button]}>Red</Text>
                     <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
                     <Text style={[styles.colorGreen, styles.button]}>Green</Text>
@@ -29,6 +29,9 @@ const styles = StyleSheet.create({
         padding: 10,
         borderWidth: 2,
         borderRadius: 10
+    },
+    flex_dir_row: {
+        flexDirection: 'row'
     }
 })
 
