@@ -118,6 +118,38 @@ class Layouts extends Component {
                     <Text style={[styles.colorYellow, styles.button, styles.align_self_center]}>Yellow</Text>
                     <Text style={[styles.colorGreen, styles.button, styles.align_self_flex_start]}>Green</Text>
                 </View>
+
+                <Text style={styles.textHeader}>E. FlexWrap</Text>
+                <Text>E1. FlexWrap property wrap</Text>
+                <View style={{ flex: 1, flexDirection: 'row', flexWrap: 'wrap' }}>
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                </View>
+                <Text>E1. FlexWrap property nowrap</Text>
+                <View style={{ flex: 1, flexDirection: 'row', flexWrap: 'nowrap' }}>
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                    <View style={styles.boxStyle} />
+                </View>
             </ScrollView>
         );
     }
@@ -206,7 +238,14 @@ const styles = StyleSheet.create({
     },
     align_self_stretch: {
         alignSelf: 'stretch'
-    }
+    },
+    boxStyle: {
+        height: 100, 
+        width: 50, 
+        borderWidth: 1, 
+        backgroundColor: 'orange', 
+        marginBottom: 5
+      },
 })
 
 export default Layouts;
