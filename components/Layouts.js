@@ -112,6 +112,12 @@ class Layouts extends Component {
                     <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
                     <Text style={[styles.colorGreen, styles.button]}>Green</Text>
                 </View>
+                <Text>D6. Align Self on child components</Text>
+                <View>
+                    <Text style={[styles.colorRed, styles.button, styles.align_self_flex_end]}>Red</Text>
+                    <Text style={[styles.colorYellow, styles.button, styles.align_self_center]}>Yellow</Text>
+                    <Text style={[styles.colorGreen, styles.button, styles.align_self_flex_start]}>Green</Text>
+                </View>
             </ScrollView>
         );
     }
