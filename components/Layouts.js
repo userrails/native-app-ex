@@ -87,6 +87,31 @@ class Layouts extends Component {
                     <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
                     <Text style={[styles.colorGreen, styles.button]}>Green</Text>
                 </View>
+                <Text style={styles.textHeader}>D. Align Self</Text>
+                <Text>D1. Align Self flex end</Text>
+                <View style={styles.align_self_flex_end}>
+                    <Text style={[styles.colorRed, styles.button]}>Red</Text>
+                    <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
+                    <Text style={[styles.colorGreen, styles.button]}>Green</Text>
+                </View>
+                <Text>D2. Align Self flex start</Text>
+                <View style={styles.align_self_flex_start}>
+                    <Text style={[styles.colorRed, styles.button]}>Red</Text>
+                    <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
+                    <Text style={[styles.colorGreen, styles.button]}>Green</Text>
+                </View>
+                <Text>D4. Align Self center</Text>
+                <View style={styles.align_self_center}>
+                    <Text style={[styles.colorRed, styles.button]}>Red</Text>
+                    <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
+                    <Text style={[styles.colorGreen, styles.button]}>Green</Text>
+                </View>
+                <Text>D5. Align Self stretch</Text>
+                <View style={styles.align_self_stretch}>
+                    <Text style={[styles.colorRed, styles.button]}>Red</Text>
+                    <Text style={[styles.colorYellow, styles.button]}>Yellow</Text>
+                    <Text style={[styles.colorGreen, styles.button]}>Green</Text>
+                </View>
             </ScrollView>
         );
     }
@@ -164,7 +189,18 @@ const styles = StyleSheet.create({
     align_items_stretch: {
         alignItems: 'stretch'
     },
-    
+    align_self_flex_end: {
+        alignSelf: 'flex-end'
+    },
+    align_self_flex_start: {
+        alignSelf: 'flex-start'
+    },
+    align_self_center: {
+        alignSelf: 'center'
+    },
+    align_self_stretch: {
+        alignSelf: 'stretch'
+    }
 })
 
 export default Layouts;
