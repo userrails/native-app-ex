@@ -18,9 +18,10 @@ import TouchHighlight from './components/TouchHighlight';
 import Layouts from './components/Layouts';
 import FlexWrap from './components/FlexWrap';
 import AlignContentFlexEnd from './components/AlignContentFlexEnd';
+import AlignContentCenter from './components/AlignContentCenter';
 
 const MainNavigator = createStackNavigator({
-  Home: { screen: AlignContentFlexEnd },
+  Home: { screen: AlignContentCenter },
   Login: { screen: LoginScreen },
   ProfileImage: { screen: ProfileImage },
   AlignTextCenterScreen: { screen: AlignTextCenterScreen },
@@ -28,7 +29,8 @@ const MainNavigator = createStackNavigator({
   TouchHighlight: { screen: TouchHighlight },
   Layouts: { screen: Layouts },
   FlexWrap: { screen: FlexWrap },
-  AlignContentFlexEnd: { screen: AlignContentFlexEnd }
+  AlignContentFlexEnd: { screen: AlignContentFlexEnd },
+  AlignContentCenter: { screen: AlignContentCenter }
 });
 
 const App = createAppContainer(MainNavigator);
