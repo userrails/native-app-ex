@@ -13,12 +13,19 @@ class HomeScreen extends React.Component {
           <Button color="red" title="Home" onPress={() => this.props.navigation.navigate('Home')} />
           <Button color="orange" title="Login" onPress={() => navigate('Login', {name: 'Sraj'})}/>
           <Button title="Profile" onPress={() => this.props.navigation.navigate('ProfileImage')}/>
+          <Button color="green" title="Notes" onPress={() => this.props.navigation.navigate('AlignTextCenterScreen')}/>
+          <Button color="lightgreen" title="Color List" onPress={() => this.props.navigation.navigate('ColorList')}/>
         </View>
         <View style={styles.menus}>
-          <Button color="green" title="Notes" onPress={() => this.props.navigation.navigate('AlignTextCenterScreen')}/>
-          <Button color="yellow" title="Color List" onPress={() => this.props.navigation.navigate('ColorList')}/>
           <Button color="purple" title="Touchable" onPress={() => this.props.navigation.navigate('TouchHighlight')}/>
           <Button color="blue" title="Layouts" onPress={() => this.props.navigation.navigate('Layouts')}/>
+          <Button color="red" title="FlexWrap" onPress={() => this.props.navigation.navigate('FlexWrap')} />
+          <Button color="orange" title="ACFlexEnd" onPress={() => this.props.navigation.navigate('AlignContentFlexEnd')}/>
+        </View>
+        <View style={styles.menus}>
+          <Button title="ACCenter" onPress={() => this.props.navigation.navigate('AlignContentCenter')}/>
+          <Button color="green" title="ACFlexStart" onPress={() => this.props.navigation.navigate('AlignContentFlexStart')}/>
+          <Button color="lightgreen" title="ACSpaceBetween" onPress={() => this.props.navigation.navigate('AlignContentSpaceBetween')}/>
         </View>
         <View>
           <Text style={styles.navigationText}>Welcome to Home Screen.</Text>  
