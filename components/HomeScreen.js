@@ -26,6 +26,7 @@ class HomeScreen extends React.Component {
           <Button title="ACCenter" onPress={() => this.props.navigation.navigate('AlignContentCenter')}/>
           <Button color="green" title="ACFlexStart" onPress={() => this.props.navigation.navigate('AlignContentFlexStart')}/>
           <Button color="lightgreen" title="ACSpaceBetween" onPress={() => this.props.navigation.navigate('AlignContentSpaceBetween')}/>
+          <Button color="purple" title="ACSpaceAround" onPress={() => this.props.navigation.navigate('AlignContentSpaceAround')}/>
         </View>
         <View>
           <Text style={styles.navigationText}>Welcome to Home Screen.</Text>  
