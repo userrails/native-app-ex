@@ -16,15 +16,19 @@ import AlignTextCenterScreen from './components/AlignTextCenterScreen';
 import ColorList from './components/ColorList';
 import TouchHighlight from './components/TouchHighlight';
 import Layouts from './components/Layouts';
+import FlexWrap from './components/FlexWrap';
+import AlignContentFlexEnd from './components/AlignContentFlexEnd';
 
 const MainNavigator = createStackNavigator({
-  Home: { screen: Layouts },
+  Home: { screen: AlignContentFlexEnd },
   Login: { screen: LoginScreen },
   ProfileImage: { screen: ProfileImage },
   AlignTextCenterScreen: { screen: AlignTextCenterScreen },
   ColorList: { screen: ColorList },
   TouchHighlight: { screen: TouchHighlight },
-  Layouts: { screen: Layouts }
+  Layouts: { screen: Layouts },
+  FlexWrap: { screen: FlexWrap },
+  AlignContentFlexEnd: { screen: AlignContentFlexEnd }
 });
 
 const App = createAppContainer(MainNavigator);
