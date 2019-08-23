@@ -10,6 +10,7 @@ class Position extends Component {
     render() {
       return (
         <View style={styles.container}>
+          <View >
           <View style={styles.box1}>
             <Text style={styles.text}>1</Text>
           </View>
@@ -19,6 +20,16 @@ class Position extends Component {
           <View style={styles.box3}>
             <Text style={styles.text}>3</Text>
           </View>
+        </View>
+
+        <View>
+          <View style={styles.box4}>
+            <Text style={styles.text}>1</Text>
+          </View>
+          <View style={styles.box5}>
+            <Text style={styles.text}>2</Text>
+          </View>
+        </View>
         </View>
       );
     }
@@ -52,6 +63,19 @@ class Position extends Component {
       height: 100,
       backgroundColor: 'green'
     },
+    box4: {
+      top: 300,
+      left: 10,
+      height: 100,
+      backgroundColor: 'orange'
+    },
+    box5: {
+      top: 350,
+      left: 10,
+      height: 100,
+      backgroundColor: 'navy'
+    },
+
     text: {
       color: '#ffffff',
       fontSize: 80

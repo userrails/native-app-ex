@@ -19,9 +19,14 @@ import Layouts from './components/Layouts';
 import FlexWrap from './components/FlexWrap';
 import AlignContentFlexEnd from './components/AlignContentFlexEnd';
 import AlignContentCenter from './components/AlignContentCenter';
+import AlignContentFlexStart from './components/AlignContentFlexStart';
+import AlignContentSpaceBetween from './components/AlignContentSpaceBetween';
+import AlignContentSpaceAround from './components/AlignContentSpaceAround';
+import AlignContentStretch from './components/AlignContentStretch';
+import Position from './components/Position';
 
 const MainNavigator = createStackNavigator({
-  Home: { screen: AlignContentCenter },
+  Home: { screen: HomeScreen },
   Login: { screen: LoginScreen },
   ProfileImage: { screen: ProfileImage },
   AlignTextCenterScreen: { screen: AlignTextCenterScreen },
@@ -30,7 +35,12 @@ const MainNavigator = createStackNavigator({
   Layouts: { screen: Layouts },
   FlexWrap: { screen: FlexWrap },
   AlignContentFlexEnd: { screen: AlignContentFlexEnd },
-  AlignContentCenter: { screen: AlignContentCenter }
+  AlignContentCenter: { screen: AlignContentCenter },
+  AlignContentFlexStart: { screen: AlignContentFlexStart },
+  AlignContentSpaceBetween: { screen: AlignContentSpaceBetween },
+  AlignContentSpaceAround: { screen: AlignContentSpaceAround },
+  AlignContentStretch: { screen: AlignContentStretch },
+  Position: { screen: Position },
 });
 
 const App = createAppContainer(MainNavigator);
