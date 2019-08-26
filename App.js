@@ -24,6 +24,7 @@ import AlignContentSpaceBetween from './components/AlignContentSpaceBetween';
 import AlignContentSpaceAround from './components/AlignContentSpaceAround';
 import AlignContentStretch from './components/AlignContentStretch';
 import Position from './components/Position';
+import ZIndex from './components/ZIndex';
 
 const MainNavigator = createStackNavigator({
   Home: { screen: HomeScreen },
@@ -41,6 +42,7 @@ const MainNavigator = createStackNavigator({
   AlignContentSpaceAround: { screen: AlignContentSpaceAround },
   AlignContentStretch: { screen: AlignContentStretch },
   Position: { screen: Position },
+  ZIndex: { screen: ZIndex },
 });
 
 const App = createAppContainer(MainNavigator);
