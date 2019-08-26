@@ -55,7 +55,29 @@ export default  class Login extends Component {
     }
 
     login = () => {
-        alert('test');
+        fetch('http://192.168.1.65:4000/api/users/sign_in', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                email: this.state.email,
+                password: this.state.password,
+            })
+        })
+
+        .then((response) => response.json())
+        .then((res) => {
+            if (res.success === true) {
+                AsyncStorage.setItem('user', res.user)
+                this.props.navigation.navigate('Profile')
+            }
+            else {
+                alert(res.message)
+            }
+        })
+        .done();
     }
 }
 

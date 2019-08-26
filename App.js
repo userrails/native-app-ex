@@ -26,6 +26,7 @@ import AlignContentStretch from './components/AlignContentStretch';
 import Position from './components/Position';
 import ZIndex from './components/ZIndex';
 import Login from './components/auth/Login';
+import Profile from './components/user/Profile';
 
 const MainNavigator = createStackNavigator({
   Home: { screen: Login },
@@ -44,7 +45,8 @@ const MainNavigator = createStackNavigator({
   AlignContentStretch: { screen: AlignContentStretch },
   Position: { screen: Position },
   ZIndex: { screen: ZIndex },
-  Login: { screen: Login }
+  Login: { screen: Login },
+  Profile: { screen: Profile },
 });
 
 const App = createAppContainer(MainNavigator);
